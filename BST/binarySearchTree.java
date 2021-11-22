@@ -1,16 +1,16 @@
 class binarySearchTree {
-	class Node
+	static class Node
 	{
-		int key;
-		Node left, right,parent;
+		int data;
+		Node left, right;
 
 		public Node(int item)
 		{
-			key = item;
-			left = right = parent = null;
+			this.data = item;
+			this.left = this.right = null;
 		}
 	}
-	Node root;
+	static Node root;
 	binarySearchTree()
 	{
 		root = null;
@@ -26,9 +26,9 @@ class binarySearchTree {
 			root = new Node(key);
 			return root;
 		}
-		if (key < root.key)
+		if (key < root.data)
 			root.left = insertRec(root.left, key);
-		else if (key > root.key)
+		else if (key > root.data)
 			root.right = insertRec(root.right, key);
 		return root;
 	}
@@ -45,9 +45,43 @@ class binarySearchTree {
 	{
 		if (root != null) {
 			inorderRec(root.left);
-			System.out.println(root.key);
+			System.out.println(root.data);
 			inorderRec(root.right);
 		}
+	}
+
+	public static Node minNode(Node temp){
+		if(temp.left==null)
+			return temp;
+		return minNode(temp.left);
+	}
+	
+	public static Node delete(Node root,int x){
+		if(root == null)
+			return null;
+		if(x<root.data)
+			root.left = delete(root.left, x);
+		else if(x>root.data)
+			root.right = delete(root.right,x);
+		else{
+			if(root.left==null){
+				Node temp=root.right;
+				return temp;
+			}
+			else if(root.right==null){
+				Node temp=root.left;
+				return temp;
+			}
+			else{
+				Node temp=minNode(root.right);
+				int tem=temp.data;
+				temp.data=root.data;
+				root.data=tem;
+				root.right=delete(root.right, x);
+			}
+		}
+		return root;
+
 	}
 
 	// Driver Code
@@ -70,6 +104,9 @@ class binarySearchTree {
 		tree.insert(80);
 
 		// print inorder traversal of the BST
+		tree.inorder();
+		System.out.println();
+		tree.delete(root, 70);
 		tree.inorder();
 	}
 }
