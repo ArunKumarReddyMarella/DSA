@@ -16,7 +16,7 @@ class isBST
     static boolean solve(Node temp,int min,int max){
       if(temp==null)
         return true;
-      if(temp.data<min || temp.data > max)
+      if(temp.data<=min || temp.data >= max)
         return false;
       boolean left=solve(temp.leftChild,min,temp.data);
       boolean right=solve(temp.rightChild,temp.data,max);
