@@ -64,7 +64,7 @@ class isBST
     n = Integer.parseInt(s.nextLine());
     for(i=0;i<n;i++)
       a[i] = s.nextInt();
-      s.close();
+    s.close();
     Node root = null;
     if(n!=0)
       root = buildTree(a, n);

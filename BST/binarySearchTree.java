@@ -56,7 +56,7 @@ class binarySearchTree {
 		return minNode(temp.left);
 	}
 	
-	public static Node delete(Node root,int x){
+	public Node delete(Node root,int x){
 		if(root == null)
 			return null;
 		if(x<root.data)
