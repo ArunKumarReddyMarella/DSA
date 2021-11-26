@@ -9,8 +9,10 @@ public class fractionalKnapsack {
         Arrays.sort(items, new Comparator < Items > () {
             @Override
             public int compare(Items o1, Items o2) {
-                return (int)(o2.cost - o1.cost);
-            }
+                if(o2.cost>o1.cost)
+                  return 1;
+                return -1;
+              }
         });
   
         double totalValue = 0;
