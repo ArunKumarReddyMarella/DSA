@@ -63,16 +63,21 @@ public class LCABST
   {
     int a[]=new int[50];
     int n, i, k1, k2;
-    Scanner s=new Scanner(System.in);
-    n = Integer.parseInt(s.nextLine().trim());
-    for(i=0;i<n;i++)
-      a[i] = s.nextInt();
-    k1 = s.nextInt();
-    k2 = s.nextInt();
-    s.close();
-    Node root = null;
-    if(n!=0)
-      root = buildTree(a, n);
-    System.out.println(Result.lowestCommonAncestor(root,k1,k2));
+    try (Scanner s = new Scanner(System.in)) {
+      n = Integer.parseInt(s.nextLine().trim());
+      for(i=0;i<n;i++)
+        a[i] = s.nextInt();
+      k1 = s.nextInt();
+      k2 = s.nextInt();
+      s.close();
+      Node root = null;
+      if(n!=0)
+        root = buildTree(a, n);
+      System.out.println(Result.lowestCommonAncestor(root,k1,k2));
+    } catch (NumberFormatException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+    
   }
 }

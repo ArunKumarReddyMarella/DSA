@@ -60,15 +60,18 @@ class isBST
   {
     int a[]=new int[10];
     int n, i;
-    Scanner s=new Scanner(System.in);
-    n = Integer.parseInt(s.nextLine());
-    for(i=0;i<n;i++)
-      a[i] = s.nextInt();
-    s.close();
-    Node root = null;
-    if(n!=0)
-      root = buildTree(a, n);
-    System.out.println(Result.isBinarySearchTree(root));
+    try (Scanner s = new Scanner(System.in)) {
+      n = Integer.parseInt(s.nextLine());
+      for(i=0;i<n;i++)
+        a[i] = s.nextInt();
+      s.close();
+      Node root = null;
+      if(n!=0)
+        root = buildTree(a, n);
+      System.out.println(Result.isBinarySearchTree(root));
+    } catch (NumberFormatException e) {
+      e.printStackTrace();
+    }
     
   }
 }
