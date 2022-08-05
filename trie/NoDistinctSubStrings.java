@@ -6,8 +6,8 @@ public class NoDistinctSubStrings {
     }
     static int distinctSubStrings(String s){
         Node root=new Node();
-        int n=s.length(),c=0;
-
+        int n=s.length();
+        int c=0;
         for(int i=0;i<n;i++){
             Node temp=root;
             for(int j=i;j<n;j++){
@@ -23,9 +23,10 @@ public class NoDistinctSubStrings {
 
     }
     public static void main(String[] args) {
-        Scanner scanner= new Scanner(System.in);
-        String str=scanner.nextLine();
-        System.out.println(distinctSubStrings(str));
+        try (Scanner scanner = new Scanner(System.in)) {
+            String str=scanner.nextLine();
+            System.out.println(distinctSubStrings(str));
+        }
     }
 
 }

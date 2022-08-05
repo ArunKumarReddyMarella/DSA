@@ -4,9 +4,9 @@ class medianOfTwoSortedArrays{
             return solve(arr2,arr1);
         int n1=arr1.length;
         int n2=arr2.length;
-        int low=0,high=n1;
+        int low=0;
+        int high=n1;
         while(low<=high){
-            //System.out.println("a");
             int cut1=(low+high)/2;
             int cut2=(n1+n2+1)/2-cut1;
             int left1=cut1==0?Integer.MIN_VALUE:arr1[cut1-1];
@@ -30,7 +30,6 @@ class medianOfTwoSortedArrays{
     public static void main(String[] args) {
         int[] arr1={1,3,5,7};
         int[] arr2={2,4,6,8};
-        System.out.println("arun");
         System.out.println(solve(arr1,arr2));
     }
 }
