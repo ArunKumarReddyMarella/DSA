@@ -30,8 +30,9 @@ static void allPermutations(String str, String permutations[]){
   {
     String str;
     Result o1 = new Result();
-    Scanner sc = new Scanner(System.in);
-    str = sc.next();
+    try (Scanner sc = new Scanner(System.in)) {
+      str = sc.next();
+    }
     int n = 1;
     for (int i = 2; i <= str.length(); i++)
         n *= i;

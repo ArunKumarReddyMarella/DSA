@@ -1,3 +1,4 @@
+package power;
 import java.util.*;
 class power{
     static double calculate(int a,int b){

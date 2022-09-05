@@ -1,3 +1,4 @@
+package Maxsum_Among_All_Rotation_Array;
 // Input:
 // N = 4
 // A[] = {8,3,1,2}
@@ -13,7 +14,7 @@ import java.util.*;
 
 class Maxsum_Among_All_Rotations_Array
 {
-    static int max_sum(int A[], int n)
+    static int max_sum(int[] A, int n)
     {
         int total_sum=0,cur_val=0;;
         for(int i=0;i<n;i++){
