@@ -1,9 +1,8 @@
 import java.io.*;
 import java.util.*;
 
-class CountTrailingZeros {
-    static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    
+class CountTrailingZeros{
+
 	static int countTrailingZeros(int n)
 	{
 		int res = 0;
@@ -16,12 +15,29 @@ class CountTrailingZeros {
 		return res;
 	}
 
-	public static void main (String[] args) throws IOException{
-        System.out.println("Enter the number");
-        StringTokenizer st = new StringTokenizer(br.readLine());
+	public static void main (String[] args) throws Exception{
+		FileInputStream fis;
+		FileOutputStream fos;
+		BufferedReader br;
+		PrintWriter pw;
+		StringTokenizer st;
+
+
+		try{
+		fis = new FileInputStream("input.txt");
+		fos = new FileOutputStream("output.txt");
+
+		br = new BufferedReader(new InputStreamReader(fis));
+		
+		pw = new PrintWriter(fos);
+
+        st = new StringTokenizer(br.readLine());
 		int number = Integer.parseInt(st.nextToken());
-
-		System.out.println(countTrailingZeros(number));
-
+		pw.println(countTrailingZeros(number));
+		pw.close();
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 }
