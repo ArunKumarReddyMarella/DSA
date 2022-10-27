@@ -41,16 +41,17 @@ public class findAllPermutations
 
 
     String str;
-    Result o1 = new Result();
+    //Result o1 = new Result();
     str = st.nextToken();
     int n = 1;
     for (int i = 2; i <= str.length(); i++)
         n *= i;
     String[] permutations = new String[n];
-    o1.allPermutations(str, permutations);
+    Result.allPermutations(str, permutations);
     Arrays.sort(permutations);
     for (int i=0; i<n; i++)
         pw.println(permutations[i]);
     pw.close();
+    br.close();
   }
 }

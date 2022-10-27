@@ -44,6 +44,7 @@ class Maxsum_Among_All_Rotations_Array
 			System.out.println(max_sum(arr,n));	
 		t--;
 		}
+        sc.close();
 	}
 	
 }
