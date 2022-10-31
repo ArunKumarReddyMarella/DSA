@@ -14,9 +14,7 @@ public class PalindromeNumber{
             reverse = reverse*10 + reminder;
             temp_number = temp_number / 10;
         }
-        if(reverse == number)
-            return true;
-        return false;
+        return (reverse == number);
     }
 
     public static void main(String[] args) throws Exception {
