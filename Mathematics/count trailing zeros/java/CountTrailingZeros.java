@@ -30,10 +30,13 @@ class CountTrailingZeros{
 		br = new BufferedReader(new InputStreamReader(fis));
 		
 		pw = new PrintWriter(fos);
+		String line;
 
-        st = new StringTokenizer(br.readLine());
-		int number = Integer.parseInt(st.nextToken());
-		pw.println(countTrailingZeros(number));
+		while((line=br.readLine())!=null){
+			st = new StringTokenizer(line);
+			int number = Integer.parseInt(st.nextToken());
+			pw.println(countTrailingZeros(number));
+		}
 		pw.close();
 		}
 		catch (Exception e) {
