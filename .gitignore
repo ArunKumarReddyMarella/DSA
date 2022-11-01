@@ -1,2 +1,4 @@
 *.class
 */cpp/*.exe
+*.iml
+*/out

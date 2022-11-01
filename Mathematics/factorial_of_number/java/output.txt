@@ -1,0 +1,3 @@
+factorial of 4 is 24
+factorial of 5 is 120
+factorial of 6 is 720
