@@ -1,0 +1,4 @@
+GCD Iterative of10 and 15 : 5
+GCD Recursive of10 and 15 : 5
+GCD Iterative of10 and 12 : 2
+GCD Recursive of10 and 12 : 2
