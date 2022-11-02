@@ -1,0 +1,4 @@
+LCM of 10 and 15 : 30
+LCM of 10 and 12 : 60
+LCM of 12 and 15 : 60
+LCM of 4 and 6 : 12
