@@ -1,0 +1,13 @@
+1 is not prime
+2 is prime
+3 is prime
+5 is prime
+7 is prime
+11 is prime
+13 is prime
+17 is prime
+4 is not prime
+6 is not prime
+33 is not prime
+67 is prime
+1031 is prime
