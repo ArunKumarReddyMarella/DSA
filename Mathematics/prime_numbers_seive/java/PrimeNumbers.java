@@ -18,6 +18,7 @@ public class PrimeNumbers {
         }
         return primeNumbers;
     }
+    //O(nloglogn)
     static List<Integer> getPrimeNumber_seive(int number){
         List<Integer> primeNumbers = new ArrayList<Integer>();
         boolean isPrime[] = new boolean[number+1];
