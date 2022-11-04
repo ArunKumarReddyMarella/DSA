@@ -48,10 +48,10 @@ public class PowerOfNumber {
                 return -1;
         int res = 1;
         while(y>0){
-            if(y%2!=0)
+            if( (y & 1) == 1)
                 res*=x;
             x*=x;
-            y/=2;
+            y=y>>1;
         }
         return res;
     }
