@@ -2,6 +2,8 @@ import java.io.*;
 import java.util.*;
 public class PrimeNumber {
     static boolean isPrime_root(int number){
+        if(number < 2)
+             return false;
         if(number < 3)
             return true;
         // n=sqrt(number) in for loop reduce i*i multiplications
