@@ -26,16 +26,25 @@ public class PrimeNumbers {
 
         if(number < 2)
             return primeNumbers;
-        for(int i=2;i*i<=number;i++){
+        // for(int i=2;i*i<=number;i++){
+        //     if(isPrime[i]){
+        //         for(int j=2*i;j<=number;j+=i){
+        //             isPrime[j]=false;
+        //         }
+        //     }
+        // }
+        // for(int i=2;i<isPrime.length;i++){
+        //     if(isPrime[i])
+        //         primeNumbers.add(i);
+        // }
+
+        for(int i=2;i<=number;i++){
             if(isPrime[i]){
-                for(int j=2*i;j<=number;j+=i){
+                primeNumbers.add(i);
+                for(int j=i*i;j<=number;j+=i){
                     isPrime[j]=false;
                 }
             }
-        }
-        for(int i=2;i<isPrime.length;i++){
-            if(isPrime[i])
-                primeNumbers.add(i);
         }
         return primeNumbers;
     }
