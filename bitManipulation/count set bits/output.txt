@@ -1,0 +1,12 @@
+number of set bits in 0 is 0
+number of set bits in 1 is 1
+number of set bits in 2 is 1
+number of set bits in 3 is 2
+number of set bits in 4 is 1
+number of set bits in 5 is 2
+number of set bits in 6 is 2
+number of set bits in 7 is 3
+number of set bits in 8 is 1
+number of set bits in 9 is 2
+number of set bits in 10 is 2
+number of set bits in 11 is 3
