@@ -51,6 +51,5 @@ public class CountSetBits {
 		catch (Exception e) {
 			e.printStackTrace();
 		}
-        System.out.println(countSetBits_eff(0));
     }    
 }
