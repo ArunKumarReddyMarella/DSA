@@ -1,0 +1,12 @@
+number 0 is not power of two
+number 1 is power of two
+number 2 is power of two
+number 3 is not power of two
+number 4 is power of two
+number 5 is not power of two
+number 6 is not power of two
+number 7 is not power of two
+number 8 is power of two
+number 9 is not power of two
+number 10 is not power of two
+number 11 is not power of two
