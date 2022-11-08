@@ -1,0 +1,4 @@
+bit in position 3 of number 15 is true
+bit in position 0 of number 5 is false
+bit in position 2 of number 5 is false
+bit in position 4 of number 8 is true
