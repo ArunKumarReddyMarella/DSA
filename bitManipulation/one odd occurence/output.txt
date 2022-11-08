@@ -1,0 +1,2 @@
+Odd number is 1
+Odd number is 3
