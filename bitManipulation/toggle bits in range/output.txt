@@ -1,0 +1,2 @@
+Toggle bits of number 17between 2 and 3 is 23
+Toggle bits of number 50between 2 and 5 is 44
