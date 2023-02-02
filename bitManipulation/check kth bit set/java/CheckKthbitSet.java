@@ -13,7 +13,6 @@ public class CheckKthbitSet {
         if (((number >> (k - 1)) & 1) == 1) 
 		    return true; 
 		return false;
-        
     }
     public static void main(String[] args) {
         FileInputStream fis;
