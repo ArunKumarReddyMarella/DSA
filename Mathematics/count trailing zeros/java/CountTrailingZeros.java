@@ -21,7 +21,7 @@ class CountTrailingZeros{
 		BufferedReader br;
 		PrintWriter pw;
 		StringTokenizer st;
-
+		System.out.println("check");
 
 		try{
 		fis = new FileInputStream("input.txt");
