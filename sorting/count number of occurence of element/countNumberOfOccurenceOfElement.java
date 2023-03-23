@@ -27,7 +27,7 @@ class countNumberOfOccurenceOfElement {
     }
 
     static int Rsearch(int[] arr, int target) {
-        int l = 0, h = arr.length - 1, n = h, last = -1;
+        int l = 0, h = arr.length - 1, last = -1;
         while (l <= h) {
             int m = l + (h - l) / 2;
             if (arr[m] == target) {
@@ -62,5 +62,6 @@ class countNumberOfOccurenceOfElement {
             else
                 OUT.println(r - l + 1);
         }
+        sc.close();
     }
 }
