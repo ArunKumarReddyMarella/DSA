@@ -22,8 +22,8 @@ public class LuckyNumber {
     }
     public static void main(String[] args) {
         int n =5;
-        //System.out.println(isLucky_recursion(n, 2));
-        System.out.println(isLucky_iteration(n));
+        System.out.println(isLucky_recursion(n, 2));
+        //System.out.println(isLucky_iteration(n));
     }
     
 }
