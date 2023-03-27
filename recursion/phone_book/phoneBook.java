@@ -30,8 +30,8 @@ public class phoneBook {
     }
     public static void main(String[] args) {
 
-        //int[] a = {2,3,4};
-        int[] a = {5,8,8,9,8};
+        int[] a = {2,3,4};
+        //int[] a = {5,8,8,9,8};
         System.out.println(possibleWords(a));
     }
 }
