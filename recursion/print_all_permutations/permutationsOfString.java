@@ -3,8 +3,7 @@ package print_all_permutations;
 public class permutationsOfString {
     public static void main(String[] args) {
         String str = "abc";
-        subSequences("",str,0);
-        //permutation(str,0);
+        permutation(str,0);
     }
 
 
@@ -28,15 +27,5 @@ public class permutationsOfString {
         strC[i] = c;
 
         return new String(strC);
-    }
-
-
-    private static void subSequences(String cur,String str,int length) {
-        if(length == str.length()) {
-            System.out.println(cur);
-            return;
-        }
-        subSequences(cur, str, length+1);
-        subSequences(cur+str.charAt(length), str, length+1);
     }
 }

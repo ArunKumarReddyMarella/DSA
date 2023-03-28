@@ -13,7 +13,7 @@ public class phoneBook {
             "",
             "abc","def","ghi","jkl","mno","pqrs","tuv","wxyz"
         };
-        String curStr ="";
+        String curStr = new String();
         int at =0;
         dfs(a,at,map,curStr);
         return result;
