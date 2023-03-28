@@ -18,7 +18,6 @@ public class LuckyNumber {
             c++;
         }
         return true;
-
     }
     public static void main(String[] args) {
         int n =5;
