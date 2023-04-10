@@ -12,6 +12,7 @@ public class RearrangeArray {
             long x = arr[i];
             long y= arr[(int)x];
             //encoding the value
+            System.out.print(y%n+" ");
             arr[i] = x+(y%n)*n;
         }
         //decoding
