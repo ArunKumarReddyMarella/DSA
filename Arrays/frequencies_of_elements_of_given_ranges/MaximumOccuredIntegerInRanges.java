@@ -1,5 +1,3 @@
-package frequencies_of_elements_of_given_ranges;
-
 public class MaximumOccuredIntegerInRanges {
     public static int maxOccured(int L[], int R[], int n, int maxx){
         int[] freq= new int[maxx+2];

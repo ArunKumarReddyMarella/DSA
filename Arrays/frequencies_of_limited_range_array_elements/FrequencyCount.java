@@ -1,4 +1,4 @@
-package frequencies_of_limited_range_array_elements;
+//package frequencies_of_limited_range_array_elements;
 
 import java.util.Scanner;
 

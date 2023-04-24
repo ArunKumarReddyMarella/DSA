@@ -1,5 +1,3 @@
-package equilibrium_point;
-
 public class EquilibriumPoint{
     static boolean ePoint(int arr[]){
         int total_sum = 0;
@@ -18,8 +16,9 @@ public class EquilibriumPoint{
         }
         return false;
     }
+    
     public static void main(String[] args) {
         int arr[] = {3,4,8,-9,9,7};
-        System.out.println(arr);
+        System.out.println(ePoint(arr));
     }
 }
