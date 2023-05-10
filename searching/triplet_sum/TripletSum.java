@@ -22,7 +22,7 @@ public class TripletSum {
 				else if (A[i] + A[l] + A[r] < sum) 
 					l++; 
 
-				else // A[i] + A[l] + A[r] > sum 
+				else  
 					r--; 
 			} 
 		} 
