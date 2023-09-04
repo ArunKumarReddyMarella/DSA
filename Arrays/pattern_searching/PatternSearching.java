@@ -19,6 +19,6 @@ public class PatternSearching{
         return false;
     }
     public static void main(String[] args) {
-        System.oout.println(searchPattern("abcdefh","bcd"));
+        System.out.println(searchPattern("abcdefh","bcd"));
     }
 }
